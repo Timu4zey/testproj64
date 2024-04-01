@@ -8,7 +8,7 @@ class Square(Shape):
         return a * a
 
 
-class Прямоугольник(Shape):
+class Rectangle(Shape):
     def size(self, a, b):
         return a * b
 
@@ -23,12 +23,12 @@ def square_size(shape):
 
 
 square = Square()
-прямоугольник = Прямоугольник()
+rect = Rectangle()
 square.a, square.b = 10, 10
-прямоугольник.a, прямоугольник.b = 10, 20
+rect.a, rect.b = 10, 20
 
 square_size(square)
-square_size(прямоугольник)
+square_size(rect)
 
 круг = Circle()
 круг.a, круг.b = 55, 55
