@@ -3,7 +3,7 @@ class Shape:
         pass
 
 
-class Квадрат(Shape):
+class Square(Shape):
     def size(self, a, b):
         return a * a
 
@@ -22,12 +22,12 @@ def square_size(shape):
     print(shape.size(shape.a, shape.b))
 
 
-квадрат = Квадрат()
+square = Square()
 прямоугольник = Прямоугольник()
-квадрат.a, квадрат.b = 10, 10
+square.a, square.b = 10, 10
 прямоугольник.a, прямоугольник.b = 10, 20
 
-square_size(квадрат)
+square_size(square)
 square_size(прямоугольник)
 
 круг = Circle()
